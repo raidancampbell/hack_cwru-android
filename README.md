@@ -9,7 +9,8 @@ Hello World! Welcome to CWRU's recently inspired ambition to make the best hacka
 We'll primarily be using Trello to track feature assignment and progress. If you aren't in HacSoc or haven't been added to the board, contact <adam@case.edu>. Major bugs are to be reported in issues up and to the right, while free beer and food is to be sent again to <adam@case.edu>.
 
 # Authors
-Anno van den Akker
+- [Anno van den Akker](https://github.com/wasianish)
+- [Aidan Campbell](https://github.com/raidancampbell)
 
 # Version History
 0.0.0

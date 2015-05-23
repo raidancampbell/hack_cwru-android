@@ -19,11 +19,11 @@ Anno van den Akker
 I wouldn't for a while.... but if you want to, download/git clone me, get Android studio, run android run!
 
 # Development
-Do you know how to Android?  Or would you like to learn how and in the process make a sweet app?  Then let's Android together.  
+Do you know how to Android?  Or would you like to learn how and in the process make a sweet app?  Then let's Android together.
 
-If you don't know what youre doing, git clone this wittle repo into any diretory you want, preferable empty.
+If you don't know what you're doing, git clone this wittle repo into any directory you want, preferably an empty one.
 
-If you don't have gradle install, run the gradlew script.  Once thats done, just  run gradle and wait.  Basically it makes like a dog and fetches all of the dependencies so you don't mess it up.  It can also setup a workspace for you.
+If you don't have gradle install, run the gradlew script.  Once that's done, just  run gradle and wait.  Basically it makes like a dog and fetches all of the dependencies so you don't mess it up.  It can also setup a workspace for you.
 
 Hold on now, we don't want you just committing willie nillie so before you get started we ask you to contact us.  I can be reached at <acv31@case.edu> (to my dismay, anno@case.edu is taken).  If by this point you arent a java fanatic and want to help with something else, you can head over to the other repos or contact <adam@case.edu> for iOS and <mason@case.edu> for backend (raillssss).
 

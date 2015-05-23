@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 
-public class newMentorActivity extends AppCompatActivity {
+public class NewMentorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +48,11 @@ public class newMentorActivity extends AppCompatActivity {
         //Do we hash it before sending it to the backend?
         //query the backend to assert that the login was correct
         //then load the data, and go to a new screen.
-        String fullName = ((EditText) findViewById(R.id.newUserFullNameText)).getText().toString();//This may work...
-        String email = ((EditText) findViewById(R.id.newUserEmailAddressText)).getText().toString();
-        String password = ((EditText) findViewById(R.id.newUserPasswordText)).getText().toString();
-        String[] skills = ((EditText) findViewById(R.id.newUserTeamNameText)).getText().toString().split(",");
+        String fullName = ((EditText) findViewById(R.id.newMentorFullNameText)).getText().toString();//This may work...
+        String email = ((EditText) findViewById(R.id.newMentorEmailAddressText)).getText().toString();
+        String password = ((EditText) findViewById(R.id.newMentorPasswordText)).getText().toString();
+        String company = ((EditText) findViewById(R.id.newMentorCompanyText)).getText().toString();
+        String[] skills = ((EditText) findViewById(R.id.newMentorSkillsText)).getText().toString().split(",");
         for(int i = 0; i< skills.length; i++) skills[i] = skills[i].trim();//ugh, can't for-each it.
     }
 }

@@ -60,7 +60,8 @@
         android:focusable="false"
         android:inputType="text"
         android:maxLines="1"
-        android:textColor="#ff000000" />
+        android:textColor="#ff000000"
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -79,6 +80,6 @@
         android:layout_below="@+id/loginEmailText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="49dp" />
+        android:layout_marginTop="30dp" />
 
 </RelativeLayout>

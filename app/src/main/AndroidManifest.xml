@@ -40,6 +40,10 @@
             android:name=".NewUserActivity"
             android:label="@string/title_activity_new_user" >
         </activity>
+        <activity
+            android:name=".newMentorActivity"
+            android:label="@string/title_activity_new_mentor" >
+        </activity>
     </application>
 
 </manifest>

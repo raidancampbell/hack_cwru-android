@@ -15,4 +15,5 @@
     <string name="title_activity_organizer_main">OrganizerMainActivity</string>
     <string name="title_activity_guest_main">GuestMainActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
 </resources>

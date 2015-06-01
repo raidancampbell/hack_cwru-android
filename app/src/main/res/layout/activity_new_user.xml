@@ -22,8 +22,6 @@ TODO: fik it.-->
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="New User"
             android:id="@+id/textView2"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal" />
 
         <EditText
@@ -31,17 +29,13 @@ TODO: fik it.-->
             android:layout_height="wrap_content"
             android:id="@+id/newUserFullNameText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Full Name"
-            android:editable="true"
+            android:hint="Full Name"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
             android:inputType="text"
+            android:focusable="true"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -49,16 +43,13 @@ TODO: fik it.-->
             android:layout_height="wrap_content"
             android:id="@+id/newUserEmailAddressText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Email Address"
-            android:editable="true"
+            android:hint="Email Address"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:inputType="textEmailAddress"
+            android:focusable="true"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_below="@+id/newUserFullNameText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -66,18 +57,13 @@ TODO: fik it.-->
             android:layout_height="wrap_content"
             android:id="@+id/newUserPasswordText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Password"
-            android:editable="true"
+            android:hint="Password"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="textPassword"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:password="true"
-            android:layout_below="@+id/newUserEmailAddressText"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -85,17 +71,13 @@ TODO: fik it.-->
             android:layout_height="wrap_content"
             android:id="@+id/newUserTeamNameText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Team Name (Optional)"
-            android:editable="true"
+            android:hint="Team Name (Optional)"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp" />
 
         <LinearLayout
@@ -103,33 +85,37 @@ TODO: fik it.-->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:id="@+id/">
+            android:id="@+id/newUserHorizontalLayout">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancel"
-                android:id="@+id/newUserCancelButton" />
+                android:id="@+id/newUserCancelButton"
+                android:layout_weight="1"
+                android:onClick="cancelButtonPressed" />
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight="3" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Create"
-                    android:id="@+id/newUserCreateButton"
-                    android:layout_gravity="right" />
-            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:id="@+id/newUserCreateButton"
+                android:layout_gravity="end"
+                android:layout_weight="1" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight=".4" />
+            android:layout_weight=".4"
+            android:id="@+id/newUserEmptySpace" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -44,6 +44,10 @@
             android:name=".NewMentorActivity"
             android:label="@string/title_activity_new_mentor" >
         </activity>
+        <activity
+            android:name=".UIDemoActivity"
+            android:label="@string/title_activity_uidemo" >
+        </activity>
     </application>
 
 </manifest>

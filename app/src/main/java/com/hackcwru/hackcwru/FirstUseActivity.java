@@ -52,6 +52,9 @@ public class FirstUseActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        } else if (id== R.id.ui_demo_settings) {
+            //TODO: this is meant for ease of testing.  DO NOT RELEASE THIS.
+            startActivity(new Intent(this, UIDemoActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

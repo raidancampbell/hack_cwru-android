@@ -19,8 +19,6 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="New Mentor"
             android:id="@+id/newMentorTitle"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal" />
 
         <EditText
@@ -28,34 +26,27 @@
             android:layout_height="wrap_content"
             android:id="@+id/newMentorFullNameText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Full Name"
-            android:editable="true"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:hint="Full Name"
+            android:textColorHint="@color/material_blue_grey_800" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/newMentorEmailAddressText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Email Address"
-            android:editable="true"
+            android:hint="Email Address"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
+            android:inputType="textEmailAddress"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_below="@+id/newMentorFullNameText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -63,18 +54,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/newMentorPasswordText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Password"
-            android:editable="true"
+            android:hint="Password"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="textPassword"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:password="true"
-            android:layout_below="@+id/newMentorEmailAddressText"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -82,17 +68,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/newMentorSkillsText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Skills (comma separated)"
-            android:editable="true"
+            android:hint="Skills (comma separated)"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp" />
 
         <EditText
@@ -100,17 +82,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/newMentorCompanyText"
             android:background="#ffffffff"
-            android:autoText="true"
-            android:text="Company (Optional)"
-            android:editable="true"
+            android:hint="Company (Optional)"
+            android:textColorHint="@color/material_blue_grey_800"
             android:enabled="true"
-            android:focusable="false"
+            android:focusable="true"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#ff000000"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal" />
 
@@ -139,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="Create"
                 android:id="@+id/newMentorCreateButton"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:onClick="newMentorButtonPressed"
                 android:layout_weight="1" />
 

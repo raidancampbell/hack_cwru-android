@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hackcwru.hackcwru.UIDemoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Use"
+                android:id="@+id/demoFirstUseButton"
+                android:layout_weight="1"
+                android:onClick="demoFirstUseActivity" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guest Main"
+                android:id="@+id/demoGuestMainButton"
+                android:layout_weight="1"
+                android:onClick="demoGuestMainActivity" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hacker Main"
+                android:id="@+id/demoHackerMainButton"
+                android:layout_weight="1"
+                android:onClick="demoHackerMainActivity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/demoLoginButton"
+                android:layout_weight="1"
+                android:onClick="demoLoginActivity" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentor Main"
+                android:id="@+id/demoMentorMainButton"
+                android:layout_weight="1"
+                android:onClick="demoMentorMainActivity" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Mentor"
+                android:id="@+id/demoNewMentorButton"
+                android:layout_weight="1"
+                android:onClick="demoNewMentorActivity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User"
+                android:id="@+id/demoNewUserButton"
+                android:layout_weight="1"
+                android:onClick="demoNewUserActivity" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organizer Main"
+                android:id="@+id/demoOrganizerMainButton"
+                android:layout_weight="1"
+                android:onClick="demoOrganizerMainActivity" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight="5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
